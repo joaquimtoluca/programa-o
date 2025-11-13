@@ -1,0 +1,370 @@
+
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+
+/*GERAL*/
+body {
+  font-family: 'Montserrat';
+  background-color: #ecffc4;
+}
+
+
+
+/*MENU*/
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  font-size: 20px;
+  
+}
+
+.menu .logo img {
+  height: 90px;
+  width: auto;
+  padding-left: 40px;
+  cursor: pointer;          
+  transition: transform 0.2s ease;
+}
+
+.menu .logo img:hover {
+  transform: scale(1.05);   
+}
+  
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.menu a:hover {
+  transform: scale(1.08);
+  color: #2b4819;
+  }
+
+
+
+/*HERO*/
+.hero {
+  background: url("../images/rota-vicentina-hd\ gradiente.png") center/cover;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10%;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+
+}
+
+.hero div {
+    padding-top: 10%;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  max-width: 600px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+.hero a {
+  background-color: #317c00;
+  color: #ffffff;
+  padding: 13px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;          
+  transition: transform 0.2s ease; 
+  background-color: 0.2s ease;
+  display: inline-block; 
+}
+
+.hero a:hover {
+    transform: scale(1.1);
+    background-color: #3d9900
+}
+
+/*TEXTOS*/
+.sobre {
+  display: flex;
+  justify-content: flex-end;  
+  padding-top: 200px;
+  padding-right: 10%;          
+}
+
+.sobre div {
+  text-align: right;           
+  max-width: 650px;            
+}
+
+.sobre h2 {
+  color: #317c00;              
+  margin-bottom: 12px;
+  font-size: 45px;
+}
+
+.sobre p {
+  font-size: 20px;
+  max-width: 550px;
+  margin-left: auto;
+  color: #3a3838;
+}
+
+.perigos {
+  display: flex;
+  justify-content: flex-start;  
+  padding-top: 200px;
+  padding-left: 10%;          
+}
+
+.perigos div {
+  text-align: left;           
+  max-width: 650px;            
+}
+
+.perigos h2 {
+  color: #317c00;              
+  margin-bottom: 12px;
+  font-size: 45px;
+}
+
+.perigos p {
+  font-size: 20px;
+  max-width: 550px;
+  margin-right: auto;
+  color: #3a3838;
+}
+
+@media (max-width: 768px) {
+  .sobre, .perigos {
+    justify-content: center;
+    padding: 100px 5%;
+    text-align: center;
+  }
+
+  .sobre div, .perigos div {
+    text-align: center;
+  }
+}
+
+/*PERCURSO*/
+.trilho {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.trilho h2 {
+  color: #317c00;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.trilho .locais {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  padding: 0 60px;
+}
+
+.trilho .local {
+  background-color: #1d4d00;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trilho .local:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.trilho .local img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.trilho .local h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+
+
+
+@media (max-width: 768px) {
+  .trilho .locais {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .trilho .local {
+    width: 80%;
+    height: 380px;
+  }
+
+  .trilho h2 {
+    font-size: 38px;
+  }
+
+  .imagem-container h3 {
+    font-size: 22px;
+  }
+}
+
+
+
+/*INSCRIÇÃO*/
+.inscricao {
+  background-color: #1d4d00;
+  text-align: center;
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.inscricao h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #ecffc4;
+}
+
+.inscricao p {
+  font-size: 20px;
+  margin-bottom: 60px;
+  color: #e8e8e8;
+}
+
+.inscricao form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.inscricao input {
+  width: 400px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  padding-left: 15px;
+  font-size: 18px;
+  background-color: #ffffff;
+  color: #333333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inscricao input:focus {
+  outline: none;
+  box-shadow: 0 0 6px #8aff6c;
+  transform: scale(1.02);
+}
+
+.inscricao button {
+  background-color: #ecffc4;
+  color: #1d4d00;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.inscricao button:hover {
+  background-color: #c7d7a4;
+  transform: scale(1.05);
+}
+
+
+/*FOOTER*/
+.footer {
+  background-color: #1d4d00;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.footer2 {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footertexto {
+  margin-bottom: 8px;
+  color: #ecffc4;
+  font-size: 14px;
+}
+
+.footerredes {
+  display: flex;
+  gap: 20px;
+}
+
+.footerredes img {
+  width: 32px;
+  height: 32px; 
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.footerredes img:hover {
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .footer2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerredes {
+    justify-content: center;
+  }
+}
